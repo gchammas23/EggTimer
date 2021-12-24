@@ -232,11 +232,17 @@
                                         </items>
                                     </menu>
                                 </popUpButtonCell>
+                                <connections>
+                                    <action selector="popupValueChanged:" target="5rU-Xk-Qdt" id="HRf-XN-Omg"/>
+                                </connections>
                             </popUpButton>
                             <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="lRG-L4-cc6">
                                 <rect key="frame" x="18" y="68" width="380" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                 <sliderCell key="cell" enabled="NO" state="on" alignment="left" minValue="1" maxValue="25" doubleValue="6" tickMarkPosition="above" numberOfTickMarks="25" allowsTickMarkValuesOnly="YES" sliderType="linear" id="gIB-S9-8FS"/>
+                                <connections>
+                                    <action selector="sliderValueChanged:" target="5rU-Xk-Qdt" id="hQ3-Tw-tou"/>
+                                </connections>
                             </slider>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6G0-jG-N2p">
                                 <rect key="frame" x="357" y="2" width="53" height="32"/>
@@ -248,6 +254,9 @@
 DQ
 </string>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="okButtonClicked:" target="5rU-Xk-Qdt" id="Cet-sw-zRK"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zn1-7M-Xoj">
                                 <rect key="frame" x="5" y="2" width="76" height="32"/>
@@ -259,6 +268,9 @@ DQ
 Gw
 </string>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="cancelButtonClicked:" target="5rU-Xk-Qdt" id="nF3-83-fhN"/>
+                                </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mID-Tl-m0t">
                                 <rect key="frame" x="160" y="102" width="119" height="16"/>
@@ -271,6 +283,11 @@ Gw
                             </textField>
                         </subviews>
                     </view>
+                    <connections>
+                        <outlet property="customSlider" destination="lRG-L4-cc6" id="JIF-c1-Bav"/>
+                        <outlet property="customTextField" destination="mID-Tl-m0t" id="lFy-cx-Mtz"/>
+                        <outlet property="presetsPopup" destination="MgB-3e-zdH" id="zXf-YS-zjY"/>
+                    </connections>
                 </viewController>
                 <customObject id="alP-7e-fcA" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
