@@ -707,28 +707,28 @@
             <objects>
                 <viewController id="XfG-lQ-9wD" customClass="ViewController" customModule="EggTimer" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" id="m2S-Jp-Qdl">
-                        <rect key="frame" x="0.0" y="0.0" width="480" height="270"/>
+                        <rect key="frame" x="0.0" y="0.0" width="346" height="471"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <subviews>
                             <stackView distribution="fillEqually" orientation="horizontal" alignment="top" spacing="0.0" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="3QR-K1-vqh">
-                                <rect key="frame" x="0.0" y="0.0" width="480" height="32"/>
+                                <rect key="frame" x="0.0" y="0.0" width="346" height="32"/>
                                 <subviews>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="arG-VL-BlL">
-                                        <rect key="frame" x="0.0" y="-1" width="160" height="34"/>
+                                        <rect key="frame" x="0.0" y="-1" width="115" height="34"/>
                                         <buttonCell key="cell" type="smallSquare" title="Start" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="Xe5-Zs-12s">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system" size="24"/>
                                         </buttonCell>
                                     </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="pi2-Nb-MwF">
-                                        <rect key="frame" x="160" y="-1" width="160" height="34"/>
+                                        <rect key="frame" x="115" y="-1" width="116" height="34"/>
                                         <buttonCell key="cell" type="smallSquare" title="Stop" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" enabled="NO" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="o66-bm-jze">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system" size="24"/>
                                         </buttonCell>
                                     </button>
                                     <button verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="5Jp-DY-Z2E">
-                                        <rect key="frame" x="320" y="-1" width="160" height="34"/>
+                                        <rect key="frame" x="231" y="-1" width="115" height="34"/>
                                         <buttonCell key="cell" type="smallSquare" title="Reset" bezelStyle="smallSquare" imagePosition="overlaps" alignment="center" lineBreakMode="truncatingTail" enabled="NO" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="iwZ-ZT-AV3">
                                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
                                             <font key="font" metaFont="system" size="24"/>
@@ -751,17 +751,55 @@
                                     <real value="3.4028234663852886e+38"/>
                                 </customSpacing>
                             </stackView>
+                            <stackView distribution="fill" orientation="vertical" alignment="trailing" spacing="31" horizontalStackHuggingPriority="249.99998474121094" verticalStackHuggingPriority="249.99998474121094" detachesHiddenViews="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5ue-Cx-RvK">
+                                <rect key="frame" x="20" y="52" width="306" height="399"/>
+                                <subviews>
+                                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="jre-53-Yy2">
+                                        <rect key="frame" x="18" y="283" width="270" height="116"/>
+                                        <textFieldCell key="cell" lineBreakMode="clipping" alignment="center" title="6:00" id="yHo-fu-U71">
+                                            <font key="font" size="100" name="HelveticaNeue"/>
+                                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                            <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
+                                        </textFieldCell>
+                                    </textField>
+                                    <imageView horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="D5N-n4-LLI">
+                                        <rect key="frame" x="20" y="0.0" width="266" height="252"/>
+                                        <imageCell key="cell" refusesFirstResponder="YES" alignment="left" imageScaling="proportionallyUpOrDown" image="stopped" id="EJo-Ak-Kdp"/>
+                                    </imageView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="D5N-n4-LLI" secondAttribute="trailing" constant="20" symbolic="YES" id="HQZ-So-QjC"/>
+                                    <constraint firstAttribute="trailing" secondItem="jre-53-Yy2" secondAttribute="trailing" constant="20" symbolic="YES" id="TfJ-Vr-3XQ"/>
+                                    <constraint firstItem="jre-53-Yy2" firstAttribute="leading" secondItem="5ue-Cx-RvK" secondAttribute="leading" constant="20" symbolic="YES" id="jkZ-EC-Lsg"/>
+                                    <constraint firstItem="D5N-n4-LLI" firstAttribute="leading" secondItem="5ue-Cx-RvK" secondAttribute="leading" constant="20" symbolic="YES" id="maw-wI-CCI"/>
+                                </constraints>
+                                <visibilityPriorities>
+                                    <integer value="1000"/>
+                                    <integer value="1000"/>
+                                </visibilityPriorities>
+                                <customSpacing>
+                                    <real value="3.4028234663852886e+38"/>
+                                    <real value="3.4028234663852886e+38"/>
+                                </customSpacing>
+                            </stackView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="3QR-K1-vqh" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="FtT-El-toc"/>
+                            <constraint firstItem="5ue-Cx-RvK" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="20" id="IPG-JM-4Ni"/>
                             <constraint firstAttribute="trailing" secondItem="3QR-K1-vqh" secondAttribute="trailing" id="RXi-4T-18v"/>
+                            <constraint firstItem="3QR-K1-vqh" firstAttribute="top" secondItem="5ue-Cx-RvK" secondAttribute="bottom" constant="20" id="b2w-s3-K1Y"/>
                             <constraint firstAttribute="bottom" secondItem="3QR-K1-vqh" secondAttribute="bottom" id="lly-T7-smy"/>
+                            <constraint firstItem="5ue-Cx-RvK" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" constant="20" id="oUs-vm-f3P"/>
+                            <constraint firstAttribute="trailing" secondItem="5ue-Cx-RvK" secondAttribute="trailing" constant="20" id="vmU-oh-bXF"/>
                         </constraints>
                     </view>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="75" y="825"/>
+            <point key="canvasLocation" x="75" y="941"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="stopped" width="128" height="128"/>
+    </resources>
 </document>
