@@ -46,12 +46,12 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
-		C5DE85592777519C00501CB0 /* Models */ = {
+		C5DE85592777519C00501CB0 /* Model */ = {
 			isa = PBXGroup;
 			children = (
 				C5DE855A277758C000501CB0 /* EggTimer.swift */,
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
 		C5FE64A5277502F80084A14D = {
@@ -73,7 +73,7 @@
 		C5FE64B0277502F80084A14D /* EggTimer */ = {
 			isa = PBXGroup;
 			children = (
-				C5DE85592777519C00501CB0 /* Models */,
+				C5DE85592777519C00501CB0 /* Model */,
 				C5FE64B1277502F80084A14D /* AppDelegate.swift */,
 				C5FE64B5277503020084A14D /* Assets.xcassets */,
 				C5FE64B7277503020084A14D /* Main.storyboard */,
