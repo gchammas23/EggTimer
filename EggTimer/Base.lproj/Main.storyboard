@@ -254,6 +254,9 @@
 DQ
 </string>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="okButtonClicked:" target="5rU-Xk-Qdt" id="klg-1z-ZJz"/>
+                                </connections>
                             </button>
                             <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Zn1-7M-Xoj">
                                 <rect key="frame" x="5" y="2" width="76" height="32"/>
@@ -265,6 +268,9 @@ DQ
 Gw
 </string>
                                 </buttonCell>
+                                <connections>
+                                    <action selector="cancelButtonClicked:" target="5rU-Xk-Qdt" id="3lr-zR-j1d"/>
+                                </connections>
                             </button>
                             <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mID-Tl-m0t">
                                 <rect key="frame" x="160" y="102" width="119" height="16"/>
