@@ -11,6 +11,7 @@ class PrefsViewController: NSViewController {
     @IBOutlet weak var presetsPopup: NSPopUpButton!
     @IBOutlet weak var customSlider: NSSlider!
     @IBOutlet weak var customTextField: NSTextField!
+    @IBOutlet weak var playSoundCheckBox: NSButton!
     
     var prefs = Preferences()
     
@@ -57,6 +58,8 @@ class PrefsViewController: NSViewController {
         
         customSlider.integerValue = selectedTimeInMinutes
         showSliderValueAsText()
+        
+        playSoundCheckBox.state = prefs.playSound ? .on : .off
     }
     
     func showSliderValueAsText() {
@@ -68,6 +71,8 @@ class PrefsViewController: NSViewController {
     func savePrefs() {
         prefs.selectedTime = customSlider.doubleValue * 60
         NotificationCenter.default.post(name: Notification.Name("PrefsChanged"), object: nil)
+        prefs.playSound = playSoundCheckBox.state == .on ? true : false
+        NotificationCenter.default.post(name: Notification.Name("PlaySound"), object: nil)
     }
     
 }

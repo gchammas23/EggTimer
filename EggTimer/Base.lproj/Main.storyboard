@@ -281,11 +281,20 @@ Gw
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
                                 </textFieldCell>
                             </textField>
+                            <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="mnn-PT-RyW">
+                                <rect key="frame" x="109" y="32" width="196" height="18"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <buttonCell key="cell" type="check" title="Play sound when timer ends" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="3GZ-wR-eTh">
+                                    <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                    <font key="font" metaFont="system"/>
+                                </buttonCell>
+                            </button>
                         </subviews>
                     </view>
                     <connections>
                         <outlet property="customSlider" destination="lRG-L4-cc6" id="JIF-c1-Bav"/>
                         <outlet property="customTextField" destination="mID-Tl-m0t" id="lFy-cx-Mtz"/>
+                        <outlet property="playSoundCheckBox" destination="mnn-PT-RyW" id="wUW-ho-Ac1"/>
                         <outlet property="presetsPopup" destination="MgB-3e-zdH" id="zXf-YS-zjY"/>
                     </connections>
                 </viewController>

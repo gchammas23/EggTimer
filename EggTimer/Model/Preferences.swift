@@ -21,4 +21,14 @@ struct Preferences {
             UserDefaults.standard.set(newValue, forKey: "selectedTime")
         }
     }
+    
+    var playSound: Bool {
+        get {
+            return UserDefaults.standard.bool(forKey: "playSound")
+        }
+        
+        set {
+            UserDefaults.standard.set(newValue, forKey: "playSound")
+        }
+    }
 }
