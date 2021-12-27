@@ -220,7 +220,13 @@ extension ViewController {
             soundPlayer = try AVAudioPlayer(contentsOf: audioFileUrl)
             soundPlayer?.prepareToPlay()
         } catch {
-            print("Sound player not available: \(error)")
+            let errorAlert = NSAlert()
+            errorAlert.messageText = "An error occured"
+            errorAlert.informativeText = "Sound player not available: \(error)"
+            errorAlert.alertStyle = .critical
+            
+            errorAlert.addButton(withTitle: "Dismiss")
+            errorAlert.runModal()
         }
     }
     
